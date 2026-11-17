@@ -1,0 +1,12 @@
+# Pinned versions the submission was produced with (Python 3.13.11).
+# numpy + pandas run the pipeline and the NumPy inference of the TCN; scikit-learn + joblib are needed
+# for the team-shape inputs and the previous version (--model p3), whose saved models need these
+# exact versions to unpickle identically.
+numpy==2.5.4
+pandas==3.1.0
+scikit-learn==1.9.1
+joblib==1.6.0
+# Only for retraining (not needed to regenerate the submission):
+#   lxml==6.1.3 for the DFL loader (external/sportec_dfl.py);
+#   torch==2.12.0 for training, from https://download.pytorch.org/whl/cu130 (GPU, used for the
+#   submitted models) or https://download.pytorch.org/whl/cpu.
